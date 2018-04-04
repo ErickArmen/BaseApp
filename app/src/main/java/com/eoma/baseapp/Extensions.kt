@@ -10,3 +10,7 @@ fun SharedPreferences.savePreferences(name: String, value: String){
 fun SharedPreferences.getPreferences(name: String){
     this.getString(name, "")
 }
+
+fun SharedPreferences.savePreferences(name: String, value: Int){
+    this.edit().putInt(name, value)
+}
